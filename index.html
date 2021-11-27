@@ -15,6 +15,13 @@ GOOGLE FONTS*/
             Vamos a contradecir a Bootstrap, partiendo con un par de variables
             1) La que define la familia tipográfica que se aplica por defecto
             2) La que define un color que podríamos reutilizar
+            thin ---- 100
+            light ---- 200
+            book ---- 300
+            normal ---- 400
+            semibold ---- 600
+            bold ---- 700
+            heavy ---- 900
             */
 
             :root {
@@ -56,6 +63,7 @@ GOOGLE FONTS*/
             strong,
             b,
             em {
+                /*b = bold, em = emphasis que en inglés suele usar itálica, entonces lo cambio a normal*/
                 font-weight: 500;
                 font-style: normal;
             }
@@ -66,7 +74,7 @@ GOOGLE FONTS*/
                 font-size: calc(2rem + 2vw); /*Gibón de manos blancas necesita que sea 2vw, el original era 3*/
             }
 
-            h1:after{
+            h1:after {
                 content: "!!!!";
             }
 
@@ -118,10 +126,17 @@ GOOGLE FONTS*/
                     <h2 class="text-center fst-italic mt-5"><span class="px-2 py-1">Nombre científico</span></h2>
 
                     <h1 class="text-center py-3">Gibón de manos blancas</h1>
+                    /*py = margen de arriba y abajo
 
-                    <p class="lead">En este párrafo, de clase lead, capturamos la atención y nos comprometemos con algo que debe mostrarse antes de cerrar el encabezado (el elemento header). Es recomendable que sea como un tweet (un máximo de 280 caracteres; como referencia, en este párrafo tenemos 280 caracteres).</p>
+                    <p class="lead">
+                        En este párrafo, de clase lead, capturamos la atención y nos comprometemos con algo que debe mostrarse antes de cerrar el encabezado (el elemento header). Es recomendable que sea como un tweet (un máximo de 280
+                        caracteres; como referencia, en este párrafo tenemos 280 caracteres).
+                    </p>
 
-                    <p>Pero no podemos dejar que todo se acabe en el encabezado. Corresponde ofrecer, en este párrafo desclasado, razones para bajar por distintas secciones (section), llegando al pie de página (footer). Nuevamente, que sea como un tweet (aquí también pueden contar sólo 280 caracteres).</p>
+                    <p>
+                        Pero no podemos dejar que todo se acabe en el encabezado. Corresponde ofrecer, en este párrafo desclasado, razones para bajar por distintas secciones (section), llegando al pie de página (footer). Nuevamente, que sea
+                        como un tweet (aquí también pueden contar sólo 280 caracteres).
+                    </p>
 
                     <div class="row">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6 my-3 mx-auto">
@@ -148,32 +163,32 @@ GOOGLE FONTS*/
                                 }
                             </style>
                             <g id="ex">
-                                <circle class="no" cx="82.1" cy="228.7" r="46.4" />
-                                <text transform="matrix(1 0 0 1 54 245)" class="blanco">EX</text>
+                                <circle class="no" cx="82.1" cy="250" r="45" />
+                                <text transform="matrix(1 0 0 1 54 265)" class="blanco">EX</text>
                             </g>
                             <g id="ew">
-                                <circle class="no" cx="212.6" cy="228.7" r="46.4" />
-                                <text transform="matrix(1 0 0 1 180 245)" class="blanco">EW</text>
+                                <circle class="no" cx="212.6" cy="250" r="45" />
+                                <text transform="matrix(1 0 0 1 180 265)" class="blanco">EW</text>
                             </g>
                             <g id="cr">
-                                <circle class="si" cx="342.9" cy="228.7" r="46.4" />
-                                <text transform="matrix(1 0 0 1 313 245)" class="blanco">CR</text>
+                                <circle class="no" cx="342.9" cy="250" r="45" />
+                                <text transform="matrix(1 0 0 1 313 265)" class="blanco">CR</text>
                             </g>
                             <g id="en">
-                                <circle class="no" cx="473.6" cy="228.7" r="46.4" />
-                                <text transform="matrix(1 0 0 1 444 245)" class="blanco">EN</text>
+                                <circle class="si" cx="473.6" cy="250" r="45" />
+                                <text transform="matrix(1 0 0 1 444 265)" class="blanco">EN</text>
                             </g>
                             <g id="vu">
-                                <circle class="no" cx="603.8" cy="228.7" r="46.4" />
-                                <text transform="matrix(1 0 0 1 574 245)" class="blanco">VU</text>
+                                <circle class="no" cx="603.8" cy="250" r="45" />
+                                <text transform="matrix(1 0 0 1 574 265)" class="blanco">VU</text>
                             </g>
                             <g id="nt">
-                                <circle class="no" cx="734.1" cy="228.7" r="46.4" />
-                                <text transform="matrix(1 0 0 1 705 245)" class="blanco">NT</text>
+                                <circle class="no" cx="734.1" cy="250" r="45" />
+                                <text transform="matrix(1 0 0 1 705 265)" class="blanco">NT</text>
                             </g>
                             <g id="lc">
-                                <circle class="no" cx="865.6" cy="228.7" r="46.4" />
-                                <text transform="matrix(1 0 0 1 840 245)" class="blanco">LC</text>
+                                <circle class="no" cx="865.6" cy="250" r="45" />
+                                <text transform="matrix(1 0 0 1 840 265)" class="blanco">LC</text>
                             </g>
                             <g id="datos">
                                 <text transform="matrix(1 0 0 1 29.8186 54.2935)" class="gris">Extinto</text>
@@ -199,6 +214,25 @@ GOOGLE FONTS*/
         </header>
         <!--ESTE ES EL CONTENIDO PRINCIPAL, ESTÁ DIVIVIDO EN VARIAS SECCIONES-->
         <main class="pb-5">
+            <!--SECCIÓN YUXTAPUESTA-->
+            <section class="container" id="seccion_yuxtapuesta">
+                <div class="row">
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <h3 class="text-center mt-5 mb-3">Sección yuxtapuesta</h3>
+                        <div id="yuxtaposicion" class="my-3">
+                            <img src="cositas/beirut-antes.jpg" alt="describa…" />
+                            <img src="cositas/beirut-despues.jpg" alt="describa…" />
+                        </div>
+                        <p>
+                            Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde
+                            <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer
+                            <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para
+                            <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo
+                            en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).
+                        </p>
+                    </div>
+                </div>
+            </section>
             <!--SECCIÓN ANCHA-->
             <section id="seccion_ancha">
                 <div class="container-fluid g-0">
@@ -239,7 +273,13 @@ GOOGLE FONTS*/
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto my-5">
-                            <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
+                            <p>
+                                Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde
+                                <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer
+                                <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para
+                                <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida
+                                (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -249,37 +289,67 @@ GOOGLE FONTS*/
                 <div class="row">
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                         <h3 class="text-center mt-5 mb-3">Sección comparativa</h3>
-                        <object data="cositas/grafico-tamanos.svg" type="image/svg+xml" class="my-3"></object>
-                        <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
-                    </div>
-                </div>
-            </section>
-            <!--SECCIÓN YUXTAPUESTA-->
-            <section class="container" id="seccion_yuxtapuesta">
-                <div class="row">
-                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                        <h3 class="text-center mt-5 mb-3">Sección yuxtapuesta</h3>
-                        <div id="yuxtaposicion" class="my-3">
-                            <img src="cositas/beirut-antes.jpg" alt="describa…" />
-                            <img src="cositas/beirut-despues.jpg" alt="describa…" />
+                        <!--AGREGO CRÁNEO EN 3D-->
+                        <div class="sketchfab-embed-wrapper">
+                            <iframe
+                                title="White-handed gibbon skull and mandible"
+                                frameborder="0"
+                                allowfullscreen
+                                mozallowfullscreen="true"
+                                webkitallowfullscreen="true"
+                                allow="autoplay; fullscreen; xr-spatial-tracking"
+                                xr-spatial-tracking
+                                execution-while-out-of-viewport
+                                execution-while-not-rendered
+                                web-share
+                                src="https://sketchfab.com/models/d7b97787ea1a4d8eae8f7ff83370be80/embed"
+                            >
+                            </iframe>
+                            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4a4a4a;">
+                                <a
+                                    href="https://sketchfab.com/3d-models/white-handed-gibbon-skull-and-mandible-d7b97787ea1a4d8eae8f7ff83370be80?utm_medium=embed&utm_campaign=share-popup&utm_content=d7b97787ea1a4d8eae8f7ff83370be80"
+                                    target="_blank"
+                                    style="font-weight: bold; color: #1caad9;"
+                                >
+                                    White-handed gibbon skull and mandible
+                                </a>
+                                by
+                                <a href="https://sketchfab.com/FloridaMuseum?utm_medium=embed&utm_campaign=share-popup&utm_content=d7b97787ea1a4d8eae8f7ff83370be80" target="_blank" style="font-weight: bold; color: #1caad9;">
+                                    FloridaMuseum
+                                </a>
+                                on
+                                <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=d7b97787ea1a4d8eae8f7ff83370be80" target="_blank" style="font-weight: bold; color: #1caad9;">Sketchfab</a>
+                            </p>
                         </div>
-                        <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
+                        <object data="cositas/grafico-tamanos.svg" type="image/svg+xml" class="my-3"></object>
+                        <p>
+                            Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde
+                            <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer
+                            <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para
+                            <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo
+                            en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).
+                        </p>
                     </div>
                 </div>
             </section>
+
             <!--SECCIÓN MOVILIZADA-->
             <section class="container" id="seccion_movilizada">
                 <div class="row">
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                         <h3 class="text-center mt-5 mb-3">Sección movilizada</h3>
-
                         <!--INTERACCIÓN-->
-                        
+
                         <h4 class="text-center mt-5 mb-3">Interacción</h4>
                         <div class="row">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                                 <style type="text/css">
-                                    .lineas {fill: none; stroke: #585453; stroke-linecap: round; stroke-miterlimit: 10; }
+                                    .lineas {
+                                        fill: none;
+                                        stroke: #585453;
+                                        stroke-linecap: round;
+                                        stroke-miterlimit: 10;
+                                    }
                                 </style>
                                 <path id="arriba" class="lineas" d="M5,50C5,50,57.7-5.9,110,5c52.3,10.9,85,80,85,80" />
                                 <path id="abajo" class="lineas" d="M25,35c0,0,14.1,55.5,75,60c59.5,4.4,70-45,70-45" />
@@ -299,35 +369,65 @@ GOOGLE FONTS*/
                             </div>
                         </div>
 
-                        <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
+                        <p>
+                            Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde
+                            <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer
+                            <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para
+                            <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo
+                            en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).
+                        </p>
 
                         <!--ANIMACIÓN CON SVG-->
-                        
+
                         <h4 class="text-center mt-5 mb-3">Animación con SVG</h4>
                         <object class="mx-5" data="cositas/el-movimiento.svg" type="image/svg+xml"></object>
-                        <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
+                        <p>
+                            Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde
+                            <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer
+                            <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para
+                            <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo
+                            en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).
+                        </p>
 
                         <!--ANIMACIÓN CON SVG y CSS-->
 
                         <h4 class="text-center mt-5 mb-3">Animación con SVG y CSS</h4>
                         <object class="mx-5" data="cositas/el-grito.svg" type="image/svg+xml"></object>
-                        <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
+                        <p>
+                            Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde
+                            <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer
+                            <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para
+                            <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo
+                            en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).
+                        </p>
 
-                        <!--ANIMACIÓN CON GIF y CSS-->                        
+                        <!--ANIMACIÓN CON GIF y CSS-->
 
                         <h4 class="text-center mt-5 mb-3">Animación con GIF y CSS</h4>
                         <div class="mb-4 w-100 bg-light overflow-hidden">
                             <img src="cositas/corre.gif" class="w-50" id="homero" />
                         </div>
-                        <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
+                        <p>
+                            Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde
+                            <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer
+                            <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para
+                            <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo
+                            en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).
+                        </p>
 
-                        <!--ANIMACIÓN CON GIF-->                        
+                        <!--ANIMACIÓN CON GIF-->
 
                         <h4 class="text-center mt-5 mb-3">Animación con GIF</h4>
                         <div class="text-center pb-4">
                             <img src="cositas/vuela.gif" class="w-50 mx-auto" />
                         </div>
-                        <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
+                        <p>
+                            Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde
+                            <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer
+                            <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para
+                            <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo
+                            en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).
+                        </p>
                     </div>
                 </div>
             </section>
